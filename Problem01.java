@@ -1,7 +1,8 @@
 public class Problem01
 {
-
-
+    // Space complexity is the measure of how much space/memory an algorithm takes during execution
+    // Space complexity = O(1) because no extra space is required for either methods
+    // O(n)
     public static long getSumOfPrimes(int n)
     {
         // Todo 04: Develop a method that returns the sum of the prime numbers between 1 and n
@@ -18,8 +19,8 @@ public class Problem01
         }
         return sum;
     }
-
-
+    // because loop runs O(n) times and isPrime() inside the loop runs O(sqrt(n))
+   // O(n * sqrt(n))
     public static boolean isPrime(int num) {
         if (num <= 1) {
             return false;
@@ -39,7 +40,8 @@ public class Problem01
         boolean prime = isPrime(5);
         System.out.println(prime);
 
-
+       long result = getSumOfPrimes(30);
+       System.out.println(result);
 
 
     }
